@@ -98,6 +98,7 @@ fig_box = px.box(box, x='income', y='sex', color='sex',
                 labels={'sex':'Sex','income':'Income'})
 fig_box.show()
 app2 = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app2.server
 tabs_styles = {
     'height': '44px'
 }
